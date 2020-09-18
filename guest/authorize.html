@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Log in</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <link href="css/form.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="css/images/siteIcon.png">
+</head>
+<body>
+<div id="appLogin">
+    <table>
+        <tr>
+            <td colspan="2"><h1>Вход</h1></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input  v-model="username" name="username" type="text" id="username" placeholder="Введите логин"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input  v-model="password" name="password" type="password" id="password" placeholder="Введите пароль"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button v-on:click="authorisation" id="inForm">ВОЙТИ</button>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right; width: 260px; vertical-align: top; ">
+                <p>Вы не зарегистрированы?/</p>
+            </td>
+            <td style="text-align: left; width: 190px;">
+                <a style="position: relative; bottom: 30px" href="registration.html">Создать аккаунт</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="js/authorize.js"></script>
+</body>
+</html>

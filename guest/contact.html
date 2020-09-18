@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=0.7">
+    <title>CUBAFISH-Contact</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/google-translate.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+    <link href="css/card.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="css/images/siteIcon.png">
+</head>
+
+<body>
+<header>
+    <div class="wrapper">
+        <div class="logo"><a name="contact"></a>
+            <a href="https://cubafish.com.ua">
+                <img style="width: 450px; height: auto;"
+                     src="css/images/logo777.png" alt="Logo"
+                     class="logo__pic"></a>
+        </div>
+        <div class="languageKit">
+            <img style="width: 40px; height: auto" src="css/images/uaLanguage.png" alt="uk" data-google-lang="uk"
+                 class="language__img">
+            <img style="width: 40px; height: auto" src="css/images/enLanguage.png" alt="en" data-google-lang="en"
+                 class="language__img">
+            <img style="width: 40px; height: auto" src="css/images/rusLanguage.png" alt="ru" data-google-lang="ru"
+                 class="language__img">
+        </div>
+    </div>
+
+</header>
+<hr id="headerLine"/>
+
+<!-- end div#header -->
+<div id="pageWrapper">
+
+    <div id="page">
+        <div id="contactArea">
+
+            <table id="contactTable">
+                <tr>
+                    <td style="width: 1300px; height: 50px" colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 1300px; height: 100px" colspan="2">
+                        <div style="position: relative; width: 260px; left: 510px">
+                            <img src="css/images/contactIcon.png"
+                                 style="height: 95px; width: auto" alt="photo">
+                        </div>
+                        <hr style="background-color: #393900; border: 2px solid #393900"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 1300px; height: 50px" colspan="2">
+                        <div style="position: relative; width: 1250px; height: 50px; left: 20px">
+                            <p>Мы всегда на связи и готовы дать вам
+                            квалифицированный совет с выбором того, что вам нужно из
+                                многообразного ассортимента нашего магазина.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: auto; height: 50px" colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 540px; height: 70px">
+                        <img src="css/images/contactTelephone.png"
+                             style="position: relative; left: 450px; height: 70px; width: auto" alt="photo">
+                    </td>
+                    <td style="width: auto; height: 70px; text-align: left">
+                        <a style="position: relative; left: 20px; bottom: 17px"
+                           href="tel:+380989900429">+380989900429</a>
+                        <img src="css/images/telegram_viber.png"
+                             style="position: relative; left: 40px; height: 50px; width: auto" alt="photo">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: auto; height: 30px; text-align: center" colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 540px; height: 70px">
+                        <img src="css/images/email.png"
+                             style="position: relative; left: 450px; height: 70px; width: auto" alt="photo">
+                    </td>
+                    <td style="width: auto; height: 70px; text-align: left">
+                        <a style="position: relative; left: 20px; bottom: 10px" href="mailto:admin@cubafish.com.ua">admin@cubafish.com.ua</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: auto; height: 30px; text-align: center" colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 540px; height: 70px;">
+                        <img src="css/images/schedule.png" style="position: relative; left: 450px; height: 70px; width: auto" alt="photo">
+                    </td>
+                    <td style="width: auto; height: 70px; text-align: left">
+                        <p style="position: relative; width: 320px; height: auto; left: 20px;word-wrap: break-word">Пн.
+                            — Пт.: с 9:00 до 18:00 Сб.: с 9:00 до 17:00</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: auto; height: 30px" colspan="2">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 540px; height: 70px">
+                        <img src="css/images/location.png"
+                             style="position: relative; left: 450px; height: 70px; width: auto" alt="photo">
+                    </td>
+                    <td style="width: auto; height: 70px; text-align: left">
+                        <p style="position: relative; width: 320px; height: auto; left: 20px;word-wrap: break-word">
+                            г. Киев, ул. Тополева 4, 03049.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: auto; height: 30px" colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: auto; height: 30px" colspan="2">
+                        <hr style="background-color: #393900; border: 2px solid #393900"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: auto; height: 30px" colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: auto; height: 30px" colspan="2">
+                        <div style="position: relative; width: 200px; left: 570px">Мы на карте:</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 1300px; height: 1300px" colspan="2">
+                        <div style="position: relative; width: 1050px; left: 140px">
+                            <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16057.133908025951!2d30
+                                    .470016953149436!3d50.4402877291373!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x430220c68a49de38!2sCUBAFISH!5e0!3m2!1sru!2sua!4v1599472805332!5m2!1sru!2sua"
+                                    width="1000" height="1200" frameborder="0" style="border: 4px solid #d0d0d0;
+                                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)" allowfullscreen="" aria-hidden="false"
+                                    tabindex="0">
+                            </iframe>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: auto; height: auto">
+                    </td>
+                    <td style="width: auto; height: auto">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- end div#content -->
+
+</div>
+<!-- end div#page -->
+<!-- end div#wrapper -->
+<footer>
+    <div id="wrapperFooter">
+        <div id="footerContent">
+            <nav>
+                <a style="text-decoration: none;" v-on:click="anotherAction">Программа лояльности</a>
+                <a style="text-decoration: none;" href="#">Отзывы</a>
+                <a style="text-decoration: none;" href="guest/contact.html"> Контакты</a>
+                <a style="text-decoration: none;" href="https://goo.gl/maps/MLskzawkCtqhW2mr9">Найти на карте</a>
+                <a style="text-decoration: none;" v-on:click="anotherAction">О нас</a>
+            </nav>
+            <div id="logoFooter">
+                <a href="index.html"><img style="width: 500px; height: auto; margin: 0 auto; position: relative"
+                                          src="css/images/logo6.png" alt=""></a>
+
+            </div>
+            <div class="social">
+                <a href="#"><img src="css/images/Facebook.png" alt="logo"></a>
+                <a href="#"><img src="css/images/Instagram.png" alt="logo"></a>
+                <a href="#"><img src="css/images/Twitter.png" alt="logo"></a>
+            </div>
+            <p id="footerSignature">CUBAFISH 2020 &copy;</p>
+        </div>
+    </div>
+</footer>
+<script src="js/contact.js"></script>
+</body>
+</html>
