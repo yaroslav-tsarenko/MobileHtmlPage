@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="initial-scale=0.7">
+    <meta name="viewport" content="width=device-width">
     <meta name="keywords" content="Интернет-магазин Cubafish">
     <meta name="description" content="cubafish.com.ua - Рыболовный интернет магазин | Все для максимального улова.">
     <meta property="og:site_name" content="www.cubafish.com.ua">
@@ -21,6 +21,9 @@
 <body>
 <header>
     <div class="wrapper">
+        <div class="mobileHamburgerBtn">
+            <img src="guest/css/images/mobileHamburgerButton.png" id="mobileHamburger">
+        </div>
         <div class="logo">
             <img id="logoImageStyle"
                  src="guest/css/images/logo777.png" alt="Logo"
@@ -38,7 +41,7 @@
         </div>
         <div id="appSearchForm">
         <div class="search-box" >
-            <input type="text" class="search-txt" placeholder="Напишите фразу затем нажмите на кнопку поиска" v-model="searchTag"/>
+            <input type="text" class="search-txt" placeholder="Я ищу..." v-model="searchTag"/>
             <div id="searchImage" v-on:click="searchRequest"><img id="lupaImage" src="guest/css/images/lupa.png"></div>
         </div>
         </div>
