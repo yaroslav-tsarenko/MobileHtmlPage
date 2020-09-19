@@ -447,25 +447,28 @@
 
     #productValue3 {
         position: relative;
+        bottom: 10px;
+        right: 80px;
         width: 300px;
         height: 25px;
         word-wrap: break-word;
         font-family: Gill Sans, sans-serif;
-        font-size: 25px;
+        font-size: 23px;
         font-style: normal;
-        color: #000000;
+        color: #d60000;
     }
 
     #productOldValue {
         position: relative;
+        right: 105px;
         width: 300px;
         height: 25px;
         word-wrap: break-word;
         font-family: Gill Sans, sans-serif;
-        font-size: 25px;
+        font-size: 15px;
         font-style: normal;
         text-decoration: line-through;
-        color: #000000;
+        color: #797979;
     }
 
     #available {
@@ -1004,13 +1007,17 @@
         height: auto;
     }
 
+    #mobileBasketImageTable {
+        display: none;
+    }
+
     .basketPng {
         width: 75px;
         height: 65px;
         border-radius: 5%
     }
 
-    #basketCount {
+    .basketCount {
         position: relative;
         bottom: 65px;
         left: 27px;
@@ -1041,8 +1048,15 @@
 
     header {
         width: 100%;
-        height: 10vh;
+        height: 80px;
         background-color: transparent;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 80px;
+        margin: 0 auto;
+        background-color: #585801;;
     }
 
     #mobileHamburger {
@@ -1058,11 +1072,13 @@
         width: 12%;
     }
 
-    .wrapper {
-        width: 100%;
-        height: 10vh;
-        margin: 0 auto;
-        background-color: #585801;;
+    @media only screen and (max-device-width: 360px) {
+        .mobileHamburgerBtn {
+            position: relative;
+            left: 1%;
+            top: 3.2vh;
+            width: 12%;
+        }
     }
 
     .logo {
@@ -1077,19 +1093,21 @@
         left: 370px;
     }
 
-    appSearchForm {
+    #appSearchForm {
         position: relative;
+        width: 60%;
+        height: 2vh;
+        left: 16vw;
+        bottom: 2vh;
     }
 
     .search-box {
         position: relative;
         background-color: white;
-        width: 60%;
+        width: 100%;
         height: 2vh;
         border-radius: 50px;
         padding: 10px;
-        left: 17vw;
-        bottom: 2vh;
         border: 1px solid #d0d0d0;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
@@ -1103,6 +1121,7 @@
         padding: 0;
         font-size: 1.5vh;
         border: none;
+        bottom: 2px;
     }
 
     .search-box:hover {
@@ -1115,7 +1134,7 @@
         margin: 3% 1%;
         right: 0;
         left: 90%;
-        bottom: 3vh;
+        bottom: 3.4vh;
         width: 7vw;
         height: auto;
     }
@@ -1130,6 +1149,35 @@
         position: relative;
         width: 7vw;
         height: auto
+    }
+
+    #basketImageTable {
+        display: none;
+    }
+
+    #mobileBasketImageTable {
+        width: auto;
+        height: auto;
+    }
+
+    .basketCount {
+        position: relative;
+        bottom: 65px;
+        left: 27px;
+    }
+
+    .basketPng {
+        width: 15vw;
+        border-radius: 5%
+    }
+
+    #basketImage {
+        position: relative;
+        top: auto;
+        bottom: 5vh;
+        right: auto;
+        left: 81.5vw;
+        width: 15vw;
     }
 
     #adminNumber {
@@ -1147,19 +1195,7 @@
         bottom: 190px;
     }
 
-    #basketImage {
-        display: none;
-        position: relative;
-        top: auto;
-        bottom: 310px;
-        right: auto;
-        left: 1680px;
-        width: 75px;
-        height: 65px;
-    }
-
     #basketImage:hover {
-
         cursor: pointer;
     }
 
@@ -1183,4 +1219,67 @@
     footer {
         display: none;
     }
+}
+
+
+@media only screen and (max-device-width: 360px) {
+    .mobileHamburgerBtn {
+        position: relative;
+        left: 1%;
+        top: 3.6vh;
+        width: 12%;
+    }
+
+    #searchImage {
+        bottom: 4vh;
+    }
+
+    .search-txt {
+        bottom: 1vh;
+    }
+}
+
+@media only screen and (max-device-width: 280px) {
+    .mobileHamburgerBtn {
+        position: relative;
+        left: 1%;
+        top: 3vh;
+        width: 12%;
+    }
+
+    #searchImage {
+        bottom: 3vh;
+    }
+
+    .search-txt {
+        bottom: 0.7vh;
+    }
+
+    .search-box {
+        height: 1.5vh;
+    }
+
+    #appSearchForm {
+        bottom: 1.5vh;
+    }
+
+    #basketImage {
+        bottom: 4vh;
+        left: 82vw;
+    }
+
+}
+
+#productDescription3{
+    font-family: Gill Sans, sans-serif;
+    font-style: normal;
+}
+
+#shoppingCart2{
+    position: relative;
+    left: 110px;
+    bottom: 52px;
+    height: auto;
+    width: 47px;
+
 }

@@ -22,7 +22,7 @@
 <header>
     <div class="wrapper">
         <div class="mobileHamburgerBtn">
-            <img src="guest/css/images/mobileHamburgerButton.png" id="mobileHamburger">
+            <img src="guest/css/images/mobileHamburgerButton5.png" id="mobileHamburger">
         </div>
         <div class="logo">
             <img id="logoImageStyle"
@@ -40,16 +40,17 @@
             </nav>
         </div>
         <div id="appSearchForm">
-        <div class="search-box" >
-            <input type="text" class="search-txt" placeholder="Я ищу..." v-model="searchTag"/>
-            <div id="searchImage" v-on:click="searchRequest"><img id="lupaImage" src="guest/css/images/lupa.png"></div>
-        </div>
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Я ищу..." v-model="searchTag"/>
+                <div id="searchImage" v-on:click="searchRequest"><img id="lupaImage" src="guest/css/images/lupa.png">
+                </div>
+            </div>
         </div>
         <a id="adminNumber" href="tel:+380989900429">
             <img id="phoneNumberImage" src="guest/css/images/phoneNumber.png" alt="number">
         </a>
         <div class="languageKit">
-            <img class="translateImage"  src="guest/css/images/uaLanguage.png" alt="uk" data-google-lang="uk">
+            <img class="translateImage" src="guest/css/images/uaLanguage.png" alt="uk" data-google-lang="uk">
             <img class="translateImage" src="guest/css/images/enLanguage.png" alt="en" data-google-lang="en">
             <img class="translateImage" src="guest/css/images/rusLanguage.png" alt="ru" data-google-lang="ru">
         </div>
@@ -59,14 +60,32 @@
                     <td>
                         <div v-if="basketItemsCount===false"><img v-on:click="activeImageAction"
                                                                   class="basketPng"
-                                                                  src="guest/css/images/shopping-cart.png"
+                                                                  src="guest/css/images/mobile-shopping-cart.png"
                                                                   alt="basketImage"/>
                         </div>
                         <div v-if="basketItemsCount===true"><img v-on:click="activeImageAction"
                                                                  class="basketPng"
-                                                                 src="guest/css/images/shopping-cart2.png"
+                                                                 src="guest/css/images/mobile-shopping-cart2.png"
                                                                  alt="basketImage"/>
-                            <div id="basketCount"><h5>
+                            <div class="basketCount"><h5>
+                                {{basketItemsAmount}}</h5></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table id="mobileBasketImageTable">
+                <tr>
+                    <td>
+                        <div v-if="basketItemsCount===false"><img v-on:click="activeImageAction"
+                                                                  class="basketPng"
+                                                                  src="guest/css/images/mobile-shopping-cart.png"
+                                                                  alt="basketImage"/>
+                        </div>
+                        <div v-if="basketItemsCount===true"><img v-on:click="activeImageAction"
+                                                                 class="basketPng"
+                                                                 src="guest/css/images/mobile-shopping-cart2.png"
+                                                                 alt="basketImage"/>
+                            <div class="basketCount"><h5>
                                 {{basketItemsAmount}}</h5></div>
                         </div>
                     </td>

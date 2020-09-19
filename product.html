@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link href="guest/css/guest.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div>
+    <table id="fromDb" style="width:300px; height: 250px">
+
+        <tr>
+            <td
+                    style="alignment:center;vertical-align:center; width: 250px; height: 50px">
+                <img v-on:click="hiddenFlag" style="width: 220px; height: 180px; border-radius:15%"
+                     src="1.jpg" alt="photo"/>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td
+                    style="width:249px; height: auto;position: relative">
+                <img v-if="productImageRightName!=null" v-on:click="hiddenFlagRightSide"
+                     style="width: 50px;height: 40px; border-radius:5%; border: 1px solid #919191" src="2.jpg"
+                     alt="photo"/>
+                <img v-if="productImageLeftName!=null" v-on:click="hiddenFlagLeftSide"
+                     style="width: 50px;height: 40px; border-radius:5%; border: 1px solid #919191" src="3.jpg"
+                     alt="photo"/>
+                <img v-if="productImageBackName!=null" v-on:click="hiddenFlagBackSide"
+                     style="width: 50px;height: 40px; border-radius:5%; border: 1px solid #919191" src="4.jpg"
+                     alt="photo"/>
+            </td>
+
+        <tr>
+            <td style="width:300px; height: auto">
+                <div class="productDescription" id="productDescription3"><p>Катушка с байтраннером Feima KF-6000 (9bb)
+                    конусообразная шпуля</p></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="width:300px; height: auto">
+                <div v-if="Number(this.productPrice)<Number(this.oldProductPrice)" class="productValue"
+                     id="productOldValue"><p>500 грн</p></div>
+                <div class="productValue" id="productValue3"><p>300 грн</p></div>
+                <img src="shopping-cart.png" id="shoppingCart2">
+            </td>
+        </tr>
+
+
+    </table>
+    <script src="guest/js/guest.js"></script>
+</div>
+</body>
+
+</html>
