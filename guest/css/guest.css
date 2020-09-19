@@ -1283,3 +1283,13 @@
     width: 47px;
 
 }
+
+#wordCart{
+    position: relative;
+    left: 70px;
+    bottom: 12px;
+    color: white;
+    font-size: 30px;
+    font-family: Helvetica,sans-serif;
+    font-style: normal;
+}
