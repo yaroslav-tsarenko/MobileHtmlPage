@@ -447,25 +447,28 @@
 
     #productValue3 {
         position: relative;
+        bottom: 10px;
+        right: 80px;
         width: 300px;
         height: 25px;
         word-wrap: break-word;
         font-family: Gill Sans, sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         font-style: normal;
-        color: #000000;
+        color: #d60000;
     }
 
     #productOldValue {
         position: relative;
+        right: 105px;
         width: 300px;
         height: 25px;
         word-wrap: break-word;
         font-family: Gill Sans, sans-serif;
-        font-size: 25px;
+        font-size: 15px;
         font-style: normal;
         text-decoration: line-through;
-        color: #000000;
+        color: #797979;
     }
 
     #available {
@@ -1270,4 +1273,8 @@
 #productDescription3{
     font-family: Gill Sans, sans-serif;
     font-style: normal;
+}
+
+#shoppingCart2{
+
 }
