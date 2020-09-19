@@ -1039,18 +1039,19 @@
         background: #ffffff;
         text-align: justify;
         font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 13px;
         font-style: italic;
     }
 
     header {
         width: 100%;
-        height: 12vh;
+        height: 80px;
         background-color: transparent;
     }
 
     .wrapper {
         width: 100%;
-        height: 12vh;
+        height: 80px;
         margin: 0 auto;
         background-color: #585801;;
     }
@@ -1064,8 +1065,17 @@
     .mobileHamburgerBtn {
         position: relative;
         left: 1%;
-        top: 2.9vh;
+        top: 2.5vh;
         width: 12%;
+    }
+
+    @media only screen and (max-device-width: 360px) {
+        .mobileHamburgerBtn {
+            position: relative;
+            left: 1%;
+            top: 3.2vh;
+            width: 12%;
+        }
     }
 
     .logo {
@@ -1102,14 +1112,13 @@
     .search-txt {
         position: relative;
         width: 90%;
-        height: 100%;
+        height: 2vh;
         outline: none;
         background: none;
         padding: 0;
-        font-size: 1.7vh;
+        font-size: 1.5vh;
         border: none;
-        vertical-align: middle;
-        bottom: 0.5vh;
+        bottom: 2px;
     }
 
     .search-box:hover {
@@ -1119,12 +1128,12 @@
 
     #searchImage {
         position: relative;
+        margin: 3% 1%;
         right: 0;
-        left: 91%;
-        bottom: 3vh;
+        left: 90%;
+        bottom: 3.4vh;
         width: 7vw;
         height: auto;
-        vertical-align: middle;
     }
 
     #searchImage:hover {
@@ -1151,7 +1160,7 @@
     .basketCount {
         position: relative;
         bottom: 65px;
-        left: 5px;
+        left: 27px;
     }
 
     .basketPng {
@@ -1168,10 +1177,6 @@
         width: 15vw;
     }
 
-    #basketImage:hover {
-        cursor: pointer;
-    }
-
     #adminNumber {
         display: none;
         position: relative;
@@ -1185,6 +1190,10 @@
         width: 200px;
         left: 1480px;
         bottom: 190px;
+    }
+
+    #basketImage:hover {
+        cursor: pointer;
     }
 
     #proposition {
@@ -1208,6 +1217,7 @@
         display: none;
     }
 }
+
 
 @media only screen and (max-device-width: 360px) {
     .mobileHamburgerBtn {
@@ -1255,4 +1265,9 @@
         left: 82vw;
     }
 
+}
+
+#productDescription3{
+    font-family: Gill Sans, sans-serif;
+    font-style: normal;
 }
