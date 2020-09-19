@@ -1039,19 +1039,18 @@
         background: #ffffff;
         text-align: justify;
         font-family: Verdana, Arial, Helvetica, sans-serif;
-        font-size: 13px;
         font-style: italic;
     }
 
     header {
         width: 100%;
-        height: 80px;
+        height: 12vh;
         background-color: transparent;
     }
 
     .wrapper {
         width: 100%;
-        height: 80px;
+        height: 12vh;
         margin: 0 auto;
         background-color: #585801;;
     }
@@ -1065,17 +1064,8 @@
     .mobileHamburgerBtn {
         position: relative;
         left: 1%;
-        top: 2.5vh;
+        top: 2.9vh;
         width: 12%;
-    }
-
-    @media only screen and (max-device-width: 360px) {
-        .mobileHamburgerBtn {
-            position: relative;
-            left: 1%;
-            top: 3.2vh;
-            width: 12%;
-        }
     }
 
     .logo {
@@ -1112,13 +1102,14 @@
     .search-txt {
         position: relative;
         width: 90%;
-        height: 2vh;
+        height: 100%;
         outline: none;
         background: none;
         padding: 0;
-        font-size: 1.5vh;
+        font-size: 1.7vh;
         border: none;
-        bottom: 2px;
+        vertical-align: middle;
+        bottom: 0.5vh;
     }
 
     .search-box:hover {
@@ -1128,12 +1119,12 @@
 
     #searchImage {
         position: relative;
-        margin: 3% 1%;
         right: 0;
-        left: 90%;
-        bottom: 3.4vh;
+        left: 91%;
+        bottom: 3vh;
         width: 7vw;
         height: auto;
+        vertical-align: middle;
     }
 
     #searchImage:hover {
@@ -1160,7 +1151,7 @@
     .basketCount {
         position: relative;
         bottom: 65px;
-        left: 27px;
+        left: 5px;
     }
 
     .basketPng {
@@ -1177,6 +1168,10 @@
         width: 15vw;
     }
 
+    #basketImage:hover {
+        cursor: pointer;
+    }
+
     #adminNumber {
         display: none;
         position: relative;
@@ -1190,10 +1185,6 @@
         width: 200px;
         left: 1480px;
         bottom: 190px;
-    }
-
-    #basketImage:hover {
-        cursor: pointer;
     }
 
     #proposition {
@@ -1216,4 +1207,52 @@
     footer {
         display: none;
     }
+}
+
+@media only screen and (max-device-width: 360px) {
+    .mobileHamburgerBtn {
+        position: relative;
+        left: 1%;
+        top: 3.6vh;
+        width: 12%;
+    }
+
+    #searchImage {
+        bottom: 4vh;
+    }
+
+    .search-txt {
+        bottom: 1vh;
+    }
+}
+
+@media only screen and (max-device-width: 280px) {
+    .mobileHamburgerBtn {
+        position: relative;
+        left: 1%;
+        top: 3vh;
+        width: 12%;
+    }
+
+    #searchImage {
+        bottom: 3vh;
+    }
+
+    .search-txt {
+        bottom: 0.7vh;
+    }
+
+    .search-box {
+        height: 1.5vh;
+    }
+
+    #appSearchForm {
+        bottom: 1.5vh;
+    }
+
+    #basketImage {
+        bottom: 4vh;
+        left: 82vw;
+    }
+
 }
