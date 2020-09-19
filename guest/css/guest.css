@@ -453,7 +453,7 @@
         height: 25px;
         word-wrap: break-word;
         font-family: Gill Sans, sans-serif;
-        font-size: 20px;
+        font-size: 23px;
         font-style: normal;
         color: #d60000;
     }
@@ -1276,5 +1276,10 @@
 }
 
 #shoppingCart2{
+    position: relative;
+    left: 110px;
+    bottom: 52px;
+    height: auto;
+    width: 47px;
 
 }
