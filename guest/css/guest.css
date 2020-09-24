@@ -801,6 +801,8 @@
         border-radius: 4px;
     }
 
+
+/*check it*/
     #horizontalButton {
         position: relative;
         left: 2px;
@@ -1224,7 +1226,6 @@
 
     #mobilePage {
         position: relative;
-
         width: 100%;
         height: 99%;
         overflow-y: auto;
@@ -1371,14 +1372,4 @@
         left: 82vw;
     }
 
-}
-
-#wordCart{
-    position: relative;
-    left: 70px;
-    bottom: 12px;
-    color: white;
-    font-size: 30px;
-    font-family: Helvetica,sans-serif;
-    font-style: normal;
 }
